@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    background-color:#242133;
+} */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#d3d1e6;
+    color: #222;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a{
+    color: #262626;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    max-width: 1440px;
+}
+
+/* Nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.main-nav .logo{
+    width: 50px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.main-nav ul{
+    display: flex;
+    font-size: 20px;
+}
+
+.main-nav ul li{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.main-nav ul li a{
+    padding: 2px;
+    font-weight: bold;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #ddcaca;
+    color: rgb(219, 159, 159);
+    opacity: 0.6;
+}
+
+.main-nav ul .main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 65px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn:hover{
+opacity: 0.9;
+}
+
+.dark{
+    color: #fff;
+}
+
+.dark .btn{
+    background:#fafafa ;
+    color: #333;
+}
+
+/* Showcase */
+
+.showcase{
+    width: 100%;
+    height: 850px;
+    text-align: center;
+
+}
+
+.showcase p{
+    display: none;
+}
+
+.showcase img{
+    width: 1440px;
+    height: 800px;
+}
+
+.Text{
+    align-items: center;
+    justify-content: center;
+    border-bottom: 40px;
+    width: 50%;
+}
+
+/* Section 1 top */
+
+.section-1-top{
+    text-align: center;
+    align-items: center;
+}
+
+.section-1-top img{
+    width: 500px;
+}
+
+.section-1-top h2{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(151, 131, 131);
+}
+
+.section-1-top .welcome{
+    font-size: 45px;
+    color: rgb(151, 131, 131);
+}
+
+
+/* Section 1 */
+.section1{
+    position: relative;
+    max-width: 1400px;
+    padding: 0 5% 0;
+    margin: auto; 
+}
+
+.section-1-arrow{
+    font-size:3rem;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    color: rgb(151, 131, 131);
+}
+
+.fa-chevron-left{
+    left: 0;
+}
+
+.fa-chevron-right{
+    right: 0;
+}
+
+.section1cardContainer{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.section1cardContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.section-1-img-cardcontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 350px;
+}
+
+.section-1-img-cardcontainer .main-image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Section 2 */
+
+.section-2{
+    position: relative;
+    max-width: 1400px;
+    padding: 0 5% 0;
+    margin: auto; 
+}
+
+.section-2 h1{
+    margin-top: 30px;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    color: rgb(151, 131, 131);
+}
+
+.section-2 h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(151, 131, 131); 
+}
+
+.section-2 p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(151, 131, 131);
+}
+
+.section-2 .One{
+    font-size: 30px;
+}
+
+/* footer */
+.footer{
+    /* max-width: 1440px; */
+    margin: 20px 0;
+    padding: 10px 5%;
+    display: flex;
+    border-top: #222 solid 3px;
+    width: 100%;
+    background-color: #333;
+    color: #ebd4d4;
+    font-weight: bold;
+}
+
+
+
+.footer .fab{
+    font-size: 1rem;
+}
+
+.footer .socials{
+    /* margin-left: 100px; */
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    
+}
+
+.footer .socials a{
+    color: #fafafa;
+    font-weight: bold;
+}
+
+.footer .socials a:hover{
+    color: #ebdfdf;
+    text-decoration: underline 2px solid;
+}
+
+
+.footer .dev{
+    margin-top: 50px;
+    color:rgb(117, 94, 94) ; 
+}
+
+@media(max-width : 1000px){
+    html{
+        background-color:#d3d1e6;
+    }
+
+    .container{
+        max-width: 900px;
+    }
+
+    .main-nav .logo{
+        width:90px;
+        margin-top: 20px;    
+        position: relative;
+        margin-left: 20px;    
+    }
+
+    .menu-btn{
+        display: block;
+        position: absolute;
+        /* max-width: 600px; */
+    }
+
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: #ccc =solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+    
+    .showcase{
+        height: 520px;
+    }
+
+    .showcase img{
+        width: 100%;
+        height: 500px;
+    }
+
+    .section-1-top img{
+        height: 400px;
+        width: 300px;
+    }
+
+    .section-1-top h2{
+        font-size: 10px;
+    }
+
+    .section-1-top .welcome{
+        font-size: 20px;
+    }
+
+    .section-1-arrow{
+        display: none;
+    }
+
+    .section1cardContainer{
+        display: inline-block;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .section-1-img-cardcontainer{
+        margin-bottom: 10px;
+        width: 30px;
+        height: 300px;
+    }
+
+    .section-2 h1{
+        font-size: 20px;
+    }
+
+    .section-2 h2{
+        font-size: 10px;
+    }
+
+    .section-2 p{
+        font-size: 10px;
+    }
+
+    .section-2 .One{
+        font-size: 20px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer p, a{
+        font-size: 10px;
+    }
+}    
+
+
