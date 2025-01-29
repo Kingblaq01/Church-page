@@ -48,6 +48,7 @@ ul{
     width: 50px;
     margin-bottom: 15px;
     margin-top: 5px;
+    margin-left: 10px;
 }
 
 .main-nav ul{
@@ -123,7 +124,7 @@ opacity: 0.9;
 }
 
 .showcase img{
-    width: 1440px;
+    width:950px;
     height: 800px;
 }
 
